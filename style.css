@@ -233,7 +233,7 @@ p {
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 7rem;
   position: relative;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
@@ -340,6 +340,74 @@ p {
   text-align: left;
 }
 /* End Services Section */
+
+/* School Section */
+/* Bottom right text */
+
+#school {
+  background-image: url(./img/school_banner.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#school::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+#school .school {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+}
+#school h1 {
+  display: block;
+  width: fit-content;
+  font-size: 5rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
+}
+#school h1:nth-child(1) {
+  animation-delay: 1s;
+}
+#school h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#school h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+#school h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgb(35, 161, 26);
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+#school h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+#school h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+#school h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+
+/* End school Section */
 
 /* Projects section */
 #projects .projects {
