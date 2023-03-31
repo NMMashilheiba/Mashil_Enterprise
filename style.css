@@ -68,7 +68,7 @@ p {
   background-color: rgb(35, 161, 26);
 }
 .brand h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: white;
 }
@@ -90,6 +90,17 @@ p {
   background-color: rgba(31, 30, 30, 0.24);
   transition: 0.3s ease background-color;
 }
+
+#header .brand {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer .brand {
+  display: flex;
+  flex-direction: row;
+}
+
 #header .nav-bar {
   display: flex;
   align-items: center;
@@ -99,6 +110,7 @@ p {
   max-width: 1300px;
   padding: 0 10px;
 }
+
 #header .nav-list ul {
   list-style: none;
   position: absolute;
@@ -491,8 +503,8 @@ p {
   padding: 100px 20px;
 }
 #about .col-left {
-  width: 250px;
-  height: 360px;
+  width: 300px;
+  height: 300px;
 }
 #about .col-right {
   width: 100%;
@@ -516,7 +528,7 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid white;
+  border: 0px solid white;
 }
 #about .col-left .about-img::after {
   content: "";
@@ -525,8 +537,8 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid rgb(35, 161, 26);
-  z-index: -1;
+  border: 0px solid rgb(0, 0, 0);
+  z-index: 1;
 }
 /* End About Section */
 
@@ -650,6 +662,7 @@ p {
 /* End Keyframes */
 
 /* Media Query For Tablet */
+
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -657,6 +670,14 @@ p {
   }
   h1.section-title {
     font-size: 6rem;
+  }
+  .brand h1 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    color: white;
+  }
+  .brand h1 span {
+    color: rgb(35, 161, 26);
   }
 
   /* Hero */
@@ -698,16 +719,16 @@ p {
     flex-direction: row;
   }
   #about .col-left {
-    width: 600px;
-    height: 400px;
-    padding-left: 60px;
+    width: 900px;
+    height: 420px;
+    padding-left: 0px;
   }
   #about .about .col-left .about-img::after {
-    left: -45px;
+    left: 0px;
     top: 34px;
-    height: 98%;
-    width: 98%;
-    border: 10px solid rgb(31, 114, 21);
+    height: 100%;
+    width: 100%;
+    border: 0px solid rgb(31, 114, 21);
   }
   #about .col-right {
     text-align: left;
